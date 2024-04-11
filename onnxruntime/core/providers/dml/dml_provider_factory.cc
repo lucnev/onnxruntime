@@ -505,7 +505,7 @@ static D3D12_COMMAND_LIST_TYPE CalculateCommandListType(ID3D12Device* d3d12_devi
       ));
 
   // Use compute queue whenever possible on supported hardware to avoid TDR and maintain UI QoS
-  // core and generic devices only have compute quues, dx11 generally has "immediate" submission, dx12 has both
+  // core and generic devices only have compute queues, dx11 has "immediate" submission, dx12 has both
   auto use_compute_command_list = (feature_levels.MaxSupportedFeatureLevel <= D3D_FEATURE_LEVEL_1_0_CORE) ||
                                   (feature_levels.MaxSupportedFeatureLevel >= D3D_FEATURE_LEVEL_12_0);
 
