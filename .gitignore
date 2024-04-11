@@ -12,6 +12,7 @@ cmake-build-debug
 gen
 *~
 .vs
+.vscode/
 .DS_Store
 *.DS_Store
 TestResults/
