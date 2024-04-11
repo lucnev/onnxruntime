@@ -23,7 +23,6 @@
         "-runtime/references"
     ],
     "files.associations": {
-        "span": "cpp",
-        "memory": "cpp"
+        "span": "cpp"
     }
 }
